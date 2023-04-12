@@ -62,7 +62,7 @@ class BinaryTree:
 
 
 def main():
-    binary_tree = BinaryTree()
+    binary_tree = BinaryTree('root')
     binary_tree.add_child('root', 'nodo1', 'left')
     binary_tree.add_child('root', 'nodo2', 'right')
     binary_tree.add_child('nodo1', 'nodo3', 'right')
