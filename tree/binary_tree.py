@@ -1,10 +1,10 @@
 class BinaryTree:
 
-    def __init__(self):
+    def __init__(self, root):
         self.__binary_tree = dict()
-        self.__add_root()
+        self.__add_root(root)
 
-    def __add_root(self, node_name='root'):
+    def __add_root(self, node_name):
         self.__binary_tree[node_name] = {"parent": None, "left": None, "right": None}
     
 
