@@ -30,6 +30,12 @@ class BinaryTree:
         else:
             return self.__binary_tree[parent]['left']
         
+    def get_root(self):
+        for node in self.__binary_tree.keys():
+            if not self.__binary_tree[node]['parent']:
+                return node
+        return None
+        
     def is_root(self, node_name):
         if not node_name in self.__binary_tree:
             raise Exception('Node is not in the tree')
@@ -67,6 +73,7 @@ def main():
     binary_tree.add_child('root', 'nodo2', 'right')
     binary_tree.add_child('nodo1', 'nodo3', 'right')
     print(binary_tree.get())
+    print('The root node is called %s' % (binary_tree.get_root()))
     node = 'nodo1'
     print('Left child of %s is %s' % (node, binary_tree.get_left(node)))
     print('Right child of %s is %s' % (node, binary_tree.get_right(node)))
