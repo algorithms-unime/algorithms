@@ -7,7 +7,7 @@ The comments follows the Google Python Style Guide:
     https://github.com/google/styleguide/blob/gh-pages/pyguide.md
 """
 
-__copyright__ = 'Copyright 2022, FCRlab at University of Messina'
+__copyright__ = 'Copyright 2023, FCRlab at University of Messina'
 __author__ = 'Lorenzo Carnevale <lcarnevale@unime.it>'
 __credits__ = 'Algorithms and Data Structure, University of Messina'
 __description__ = 'Heapsort'
